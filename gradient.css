@@ -1,0 +1,46 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+html{
+	height:100%;
+}
+
+body{
+	height:100vh;
+	background-repeat:"no-repeat";
+	margin:0;
+	background-attachment:fixed;
+}
+
+main{
+	width:80%;
+	margin:0 auto;
+	text-align: center;
+	color:rgba(255,255,255,.5);
+	font-size:15px;
+}
+
+#mobile{
+	display:none;
+}
+
+@media(max-width:800px){
+	main{
+		display:none;
+	}
+
+	#mobile{
+		display:block;
+	}
+}
+
+
+
+.modal-body{
+	text-align:center;
+	background:rgba(255,255,255,.1);
+}
