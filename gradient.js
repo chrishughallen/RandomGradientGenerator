@@ -1,4 +1,4 @@
-const getValue = () => Math.floor(Math.random()*255)
+const getNum = (num) => Math.floor(Math.random()*num)
 let currentColor
 const SPACEBAR = 32
 const ENTER = 13
@@ -12,12 +12,12 @@ const directions = [
 'to top right',
 'to top left'
 ]
-const direction = () => directions[Math.floor(Math.random()*directions.length)]
+const direction = () => directions[getNum(directions.length)]
 
 const getRgb = () =>{
 	let color = []
 	for(let i = 0;i<3;i++){
-		color.push(getValue())
+		color.push(getNum(255))
 	}
 	return "rgb(" + color.join() + ")"
 }
